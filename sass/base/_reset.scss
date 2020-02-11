@@ -1,0 +1,54 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    line-height: 2;
+}
+
+body {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto !important;
+    font-family: 'Merriweather', serif !important;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lora', serif !important;
+}
+
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+input,
+button {
+    outline: none;
+    border: none;
+}

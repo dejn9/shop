@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="fonts/css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <!-- animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Danilo</title>
+</head>
+
+<body>
+    <header class="header" id='header'>
+        <div class="container">
+            <div class="header__flex">
+                <div class="header__logo">
+                    <a href="index.html">SHOP.</a>
+                </div>
+                <ul class="header__links">
+                    <li class="header__link"><a href="products.html">SHOP</a></li>
+                    <li class="header__link"><a href="about.html">ABOUT</a></li>
+                    <li class="header__link header__link-service">
+                        <a href="services.html">SERVICE</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Web Design</a></li>
+                            <li><a href="#">eCommerce</a></li>
+                            <li><a href="#">Branding</a></li>
+                            <li><a href="#">API</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__link"><a href="contact.html" style='color: black'>CONTACT</a></li>
+                </ul>
+                <div class="header__input">
+                    <input type="search" placeholder="Search" />
+                    <a href="#"><i class="fas fa-search"></i></a>
+                    <i class="fas fa-shopping-cart header__cart"></i>
+                </div>
+                <a href="#sidebar" class='hamburger'>
+                    <div class='hamburger__div'></div>
+                </a>
+
+                <div id="sidebar" class='sidebar'>
+                    <ul>
+                        <li><a href="#header" class='sidebar__close'>X</a></li>
+                        <li><a href="products.html">SHOP</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="services.html">SERVICE</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="photo">
+        <h1 class="photo__heading">CONTACT</h1>
+    </div>
+
+    <div class="contact">
+        <div class="container">
+            <div class="contact__left">
+                <h3>Contact Information</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 198 West 21th Street,
+                        Suite
+                        721 New
+                        York NY
+                        10016
+                    </li>
+                    <li><i class="fas fa-phone"></i> + 1235 2355 98</li>
+                    <li><i class="fas fa-envelope"></i> info@yoursite.com</li>
+                    <li><i class="fas fa-globe-americas"></i> gettemplates.com</li>
+                </ul>
+            </div>
+            <div class="contact__right">
+                <h3>Get In Touch</h3>
+
+                <form action="#">
+                    <div class="wrap">
+                        <input type="text" placeholder="Firstname" name='firstname' class='half' required>
+                        <input type="text" placeholder="Lastname" name='lastname' class='half' required>
+                    </div>
+
+                    <div class="wrap">
+                        <input type="email" placeholder="Email Address" name='email' class='full' required>
+                        <br>
+                        <input type="text" placeholder="Subject" name='subject' class='full' required>
+                    </div>
+
+                    <textarea name="message" cols="30" rows="10" placeholder="Say something about us" class='full'
+                        required></textarea>
+                    <br>
+                    <button type="submit" class='btn'>Send Message</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="subscribe">
+        <div class="container">
+            <h2 class="subscribe__heading">NEWSLETTER</h2>
+            <p class="subscribe__paragraph">
+                Just stay tune for our latest Product. Now you can subscribe
+            </p>
+
+            <form action="#">
+                <input type="email" placeholder="Email Address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer__grid">
+                <div class="footer__box">
+                    <h3>SHOP.</h3>
+                    <p>
+                        Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta
+                        adipisci
+                        architecto culpa amet.
+                    </p>
+                </div>
+
+                <div class="footer__box">
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Meetups</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__box">
+                    <ul>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Handbook</a></li>
+                        <li><a href="#">Held desk</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__box">
+                    <ul>
+                        <li><a href="#">Find Designers</a></li>
+                        <li><a href="#">Find Developers</a></li>
+                        <li><a href="#">Teams</a></li>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__copyright">
+                &copy; 2020 by Danilo Dukic. All rights reserved
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        AOS.init();
+    </script>
+    <script type='text/javascript'>
+        $(".num").counterUp({
+            delay: 10,
+            time: 2500
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+.counter {
+    &__heading {
+        font-size: 50px;
+    }
+
+}
+
+.header {
+    &__logo {
+        a {
+            font-size: 20px;
+            font-weight: 700;
+            @include color-black;
+        }
+    }
+
+    &__link {
+
+        a {
+            @include blackRgba;
+            @include transitionAll2ms;
+            font-size: 13px;
+
+            &:hover {
+                @include color-black;
+            }
+        }
+    }
+}
+
+.footer {
+    &__box {
+        h3 {
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            @include lightGrey;
+        }
+
+        a {
+            @include color-black;
+            @include transitionAll2ms;
+
+            &:hover {
+                text-decoration: underline;
+                color: inherit;
+            }
+        }
+    }
+
+    &__copyright {
+        @include lightGrey;
+        @include text-center;
+    }
+}
+
+.products {
+    p {
+        @include lightGrey;
+
+        &:first-child {
+            font-size: 12px;
+        }
+    }
+
+    &__paragraph {
+        max-width: 800px;
+        @include margin0auto;
+        margin-bottom: 100px;
+        @include paragraph;
+    }
+
+    &__box {
+        a {
+            font-size: 14px;
+            @include color-black;
+            font-weight: bold;
+            @include inline-block;
+            margin-top: 15px;
+            @include transitionAll2ms;
+
+            &:hover {
+                @include colorGold;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.subscribe {
+    &__heading {
+        @include heading;
+    }
+
+    &__paragraph {
+        @include paragraph;
+    }
+}
+
+.carousel-item {
+    div {
+        h1 {
+            @include heading;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+
+            &:first-child {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.services {
+    &__box {
+        h3 {
+            font-size: 15px;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            @include color-black;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 30px;
+            @include lightGrey;
+        }
+    }
+}
+
+.testimony {
+    p {
+        &:first-child {
+            font-size: 12px;
+        }
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .carousel-item {
+        p {
+            width: 400px;
+            @include margin0auto;
+        }
+    }
+}
+
+.team {
+    &__box {
+        h3 {
+            @include heading;
+        }
+
+        p {
+            font-size: 16px;
+            color: #828282;
+        }
+    }
+
+    &__paragraph {
+        color: #828282;
+
+        &-small {
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        &-big {
+            font-size: 18px;
+            max-width: 750px;
+            @include margin0auto;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__heading {
+        @include heading;
+        margin-bottom: 20px;
+    }
+}
+
+.photo {
+    &__heading {
+        font-size: 45px;
+        font-weight: bold;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        @include color-white;
+    }
+}
+
+.allProducts {
+    p:first-child {
+        font-size: 12px;
+    }
+
+    h2 {
+        @include heading;
+    }
+
+    p:nth-of-type(2) {
+        font-size: 18px;
+        max-width: 750px;
+        font-size: 18px;
+        @include margin0auto;
+        margin-bottom: 100px;
+    }
+}
+
+.contact {
+
+    &__left,
+    &__right {
+        h3 {
+            @include text-center;
+            margin-bottom: 20px;
+        }
+
+        button {
+            @include color-white;
+            background-color: #d1c286;
+
+        }
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .about {
+        &__left {
+            h3 {
+                @include heading;
+            }
+
+            h3,
+            p {
+                margin-bottom: 20px;
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .carousel-item {
+        div {
+            p {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

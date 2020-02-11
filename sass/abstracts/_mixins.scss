@@ -1,0 +1,97 @@
+@mixin paddingSection {
+    padding: 112px 0;
+
+    @media only screen and (max-width:992px) {
+        padding: 100px 0;
+    }
+
+    @media only screen and (max-width:768px) {
+        padding: 80px 0;
+    }
+
+    @media only screen and (max-width:576px) {
+        padding: 60px 0;
+    }
+}
+
+@mixin text-center {
+    text-align: center;
+}
+
+@mixin color-white {
+    color: white;
+}
+
+@mixin margin0auto {
+    margin: 0 auto;
+}
+
+@mixin color-black {
+    color: black;
+}
+
+@mixin transitionAll2ms {
+    transition: all .2s ease-in-out
+}
+
+@mixin inline-block {
+    display: inline-block;
+}
+
+@mixin heading {
+    font-size: 24px;
+
+    @media only screen and (max-width:768px) {
+        font-size: 20px;
+    }
+}
+
+@mixin paragraph {
+    font-size: 18px;
+
+    @media only screen and (max-width:768px) {
+        font-size: 14px;
+    }
+}
+
+@mixin lightGrey {
+    color: #828282;
+}
+
+@mixin button {
+
+    a,
+    button {
+        font-size: 18px;
+        @include colorGold;
+        padding: 14px 30px;
+        background-color: transparent;
+        border: 1px solid #d1c286;
+        line-height: 1.5;
+        @include inline-block;
+        @include transitionAll2ms;
+
+        &:hover {
+            text-decoration: none;
+            @include bgGold;
+            @include color-white;
+        }
+
+        @media only screen and (max-width:768px) {
+            padding: 7px 15px;
+            font-size: 16px;
+        }
+    }
+}
+
+@mixin colorGold {
+    color: #d1c286
+}
+
+@mixin bgGold {
+    background: #d1c286;
+}
+
+@mixin blackRgba {
+    color: rgba(0, 0, 0, .5);
+}
